@@ -2,13 +2,13 @@
 
 pkgs.stdenv.mkDerivation (finalAttrs: {
   pname = "dmux";
-  version = "5.6.3";
+  version = "5.11.1";
 
   src = pkgs.fetchFromGitHub {
     owner = "standardagents";
     repo = "dmux";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-pyeZlJsDKWR6eCagnHDi1Ktl/iPvMjbxkg3xiFmCCXc=";
+    hash = "sha256-KyZkrhqgkKbNsSfKGcNF8KC1CZ7hyWDaRR8/yaZ1QIM=";
   };
 
   pnpmDeps = pkgs.fetchPnpmDeps {
